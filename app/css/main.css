@@ -1,0 +1,605 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700");
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  body section.top {
+    height: 100vh;
+    overflow: hidden;
+    background: url("../../assets/back2.svg") no-repeat;
+    background-size: cover;
+    /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+    /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */ }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      body section.top {
+        background: none;
+        height: 50vh; } }
+    @media (min-width: 481px) and (max-width: 767px) {
+      body section.top {
+        background: none; } }
+    body section.top header {
+      /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+      height: 10vh;
+      margin: 2.88889vh 0;
+      /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+      padding: 0 3.26389vw; }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        body section.top header {
+          height: 5vh; } }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        body section.top header {
+          margin: 1.44444vh 0; } }
+      body section.top header div.logo {
+        float: left;
+        height: 100%; }
+        body section.top header div.logo img.logo {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%); }
+      body section.top header .menu {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        float: right;
+        height: 60px;
+        width: 75vw;
+        /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */ }
+        @media (min-width: 768px) and (max-width: 1024px) {
+          body section.top header .menu {
+            height: 30px; } }
+        body section.top header .menu .menu-item {
+          float: right;
+          height: 100%; }
+          body section.top header .menu .menu-item .menu-btn {
+            position: relative;
+            top: 50%;
+            height: 3vh;
+            transform: translateY(-50%);
+            padding: 1vh 2vw;
+            /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+            /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+            color: white;
+            background-color: #FF4C4D;
+            border: 1px solid transparent;
+            border-radius: 3vh;
+            margin: 0px 1vw; }
+            @media (min-width: 768px) and (max-width: 1024px) {
+              body section.top header .menu .menu-item .menu-btn {
+                padding: 0.5vh 2vw; } }
+            @media (min-width: 481px) and (max-width: 767px) {
+              body section.top header .menu .menu-item .menu-btn {
+                height: 1.5vh; } }
+            body section.top header .menu .menu-item .menu-btn p {
+              position: relative;
+              top: 50%;
+              transform: translateY(-50%);
+              font-size: 2.5vh;
+              /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+              /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+              font-weight: 600; }
+              @media (min-width: 768px) and (max-width: 1024px) {
+                body section.top header .menu .menu-item .menu-btn p {
+                  font-size: 1.5vh; } }
+              @media (min-width: 481px) and (max-width: 767px) {
+                body section.top header .menu .menu-item .menu-btn p {
+                  font-size: 1.5vh; } }
+    body section.top main {
+      padding: 0 3.26389vw;
+      height: 80vh;
+      /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */ }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        body section.top main {
+          height: 45vh; } }
+      body section.top main .content {
+        height: 100%;
+        padding: 0 3.42466vw 2vh; }
+        body section.top main .content .heading {
+          position: absolute;
+          top: 20%;
+          /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+          width: 32.29167vw;
+          /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */ }
+          @media (min-width: 768px) and (max-width: 1024px) {
+            body section.top main .content .heading {
+              top: 10vh; } }
+          @media (min-width: 481px) and (max-width: 767px) {
+            body section.top main .content .heading {
+              left: 50%;
+              transform: translateX(-50%);
+              text-align: center;
+              width: 69.44444vw; } }
+          body section.top main .content .heading p {
+            font-size: 2em;
+            font-weight: 300; }
+          body section.top main .content .heading p.header {
+            font-size: 4.2em;
+            font-weight: 400; }
+          body section.top main .content .heading .joinus {
+            padding: 10px; }
+            body section.top main .content .heading .joinus .joinus-btn {
+              margin: 0 auto;
+              height: 3vh;
+              padding: 1vh 3vw;
+              color: white;
+              background-color: #FF4C4D;
+              border: 1px solid transparent;
+              border-radius: 3vh;
+              width: fit-content;
+              /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+              /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */ }
+              @media (min-width: 768px) and (max-width: 1024px) {
+                body section.top main .content .heading .joinus .joinus-btn {
+                  height: 1.5vh;
+                  padding: 0.5vh 3vw;
+                  border-radius: 1.5vh; } }
+              @media (min-width: 481px) and (max-width: 767px) {
+                body section.top main .content .heading .joinus .joinus-btn {
+                  height: 2.22222vh;
+                  padding: 0.5vh 3vw;
+                  border-radius: 1.5vh; } }
+              body section.top main .content .heading .joinus .joinus-btn p {
+                position: relative;
+                top: 50%;
+                text-align: center;
+                transform: translateY(-50%);
+                font-size: 1.5em;
+                font-weight: 600;
+                /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+                /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */ }
+                @media (min-width: 768px) and (max-width: 1024px) {
+                  body section.top main .content .heading .joinus .joinus-btn p {
+                    font-size: 1.5vh; } }
+                @media (min-width: 481px) and (max-width: 767px) {
+                  body section.top main .content .heading .joinus .joinus-btn p {
+                    font-size: 2vh; } }
+        body section.top main .content .monitor {
+          position: relative;
+          top: 16.66667vh;
+          left: 29.16667vw;
+          /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */ }
+          @media (min-width: 481px) and (max-width: 767px) {
+            body section.top main .content .monitor {
+              left: 0;
+              top: 44.44444vh; } }
+          body section.top main .content .monitor img {
+            height: 50.22222vh;
+            /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+            /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */ }
+            @media (min-width: 768px) and (max-width: 1024px) {
+              body section.top main .content .monitor img {
+                height: 25.11111vh; } }
+            @media (min-width: 481px) and (max-width: 767px) {
+              body section.top main .content .monitor img {
+                height: 33.33333vh; } }
+  body section.features {
+    height: 100vh;
+    overflow: hidden;
+    /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+    /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */ }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      body section.features {
+        height: auto; } }
+    @media (min-width: 481px) and (max-width: 767px) {
+      body section.features {
+        height: auto; } }
+    body section.features header {
+      height: 10vh;
+      margin: 2.88889vh 0;
+      padding: 0 3.26389vw;
+      /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+      /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */ }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        body section.features header {
+          height: 5vh;
+          margin: 1.44444vh 0 0 0; } }
+      @media (min-width: 481px) and (max-width: 767px) {
+        body section.features header {
+          margin: 2.88889vh 0 0 0; } }
+      body section.features header .heading {
+        position: relative;
+        font-size: 3.5em;
+        font-weight: bold;
+        width: fit-content;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%);
+        /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+        /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */ }
+        @media (min-width: 768px) and (max-width: 1024px) {
+          body section.features header .heading {
+            font-size: 2em; } }
+        @media (min-width: 481px) and (max-width: 767px) {
+          body section.features header .heading {
+            font-size: 3em; } }
+    body section.features main {
+      overflow: hidden;
+      height: 80vh;
+      /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+      /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+      background-color: #fff;
+      color: #000; }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        body section.features main {
+          height: auto; } }
+      @media (min-width: 481px) and (max-width: 767px) {
+        body section.features main {
+          height: auto; } }
+      body section.features main .content {
+        margin: 0 9.72222vh;
+        height: 100%;
+        /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+        /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */ }
+        @media (min-width: 768px) and (max-width: 1024px) {
+          body section.features main .content {
+            margin: 0; } }
+        @media (min-width: 481px) and (max-width: 767px) {
+          body section.features main .content {
+            margin: 0; } }
+        body section.features main .content .outer {
+          margin: 0 auto;
+          height: 100%;
+          width: 80%;
+          display: flex;
+          /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+          /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+          /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+          /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */ }
+          @media (min-width: 768px) and (max-width: 1024px) {
+            body section.features main .content .outer {
+              display: block; } }
+          @media (min-width: 481px) and (max-width: 767px) {
+            body section.features main .content .outer {
+              display: block; } }
+          body section.features main .content .outer .feature {
+            height: 100%;
+            width: 33%;
+            /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+            /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */ }
+            @media (min-width: 768px) and (max-width: 1024px) {
+              body section.features main .content .outer .feature {
+                min-width: 400px;
+                margin: 0 auto;
+                height: 33%; } }
+            @media (min-width: 481px) and (max-width: 767px) {
+              body section.features main .content .outer .feature {
+                min-width: 400px;
+                margin: 0 auto;
+                height: 33%; } }
+            body section.features main .content .outer .feature .span-wrapper {
+              /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+              height: calc(100% - ($pad/2));
+              width: calc(100% - ($pad/2));
+              padding: 1vh; }
+              body section.features main .content .outer .feature .span-wrapper .head {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 2vh;
+                /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */ }
+                @media (min-width: 768px) and (max-width: 1024px) {
+                  body section.features main .content .outer .feature .span-wrapper .head {
+                    font-size: 1vh; } }
+              body section.features main .content .outer .feature .span-wrapper .pic {
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-content: center; }
+                body section.features main .content .outer .feature .span-wrapper .pic img {
+                  margin: 0 auto; }
+                body section.features main .content .outer .feature .span-wrapper .pic .pricing {
+                  margin: 0 auto; }
+              body section.features main .content .outer .feature .span-wrapper .empty {
+                height: 2vh; }
+              body section.features main .content .outer .feature .span-wrapper .content {
+                padding-top: 2vh; }
+                body section.features main .content .outer .feature .span-wrapper .content ul {
+                  padding-left: 2vh;
+                  font-size: 1.5vh;
+                  line-height: 1.5;
+                  list-style-type: none;
+                  font-weight: 500; }
+            body section.features main .content .outer .feature .item-2 {
+              box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521); }
+          body section.features main .content .outer .flex-1 .item-1 {
+            height: 5%; }
+          body section.features main .content .outer .flex-1 .item-2 {
+            background: #330f49;
+            color: white;
+            height: 75%; }
+          body section.features main .content .outer .flex-1 .item-3 {
+            height: 20%; }
+          body section.features main .content .outer .flex-2 {
+            width: 34%; }
+            body section.features main .content .outer .flex-2 .item-1 {
+              height: 12.5%; }
+            body section.features main .content .outer .flex-2 .item-2 {
+              height: 75%; }
+            body section.features main .content .outer .flex-2 .item-3 {
+              height: 12.5%; }
+          body section.features main .content .outer .flex-3 .item-1 {
+            height: 20%; }
+          body section.features main .content .outer .flex-3 .item-2 {
+            background: #330f49;
+            color: white;
+            height: 75%; }
+          body section.features main .content .outer .flex-3 .item-3 {
+            height: 5%; }
+          @media (min-width: 768px) and (max-width: 1024px) {
+            body section.features main .content .outer .flex-1 .item-1, body section.features main .content .outer .flex-1 .item-3 {
+              height: 0; }
+            body section.features main .content .outer .flex-1 .item-2 {
+              height: 100%; }
+            body section.features main .content .outer .flex-2 .item-1, body section.features main .content .outer .flex-2 .item-3 {
+              height: 0; }
+            body section.features main .content .outer .flex-2 .item-2 {
+              height: 100%; }
+            body section.features main .content .outer .flex-3 .item-1, body section.features main .content .outer .flex-3 .item-3 {
+              height: 0; }
+            body section.features main .content .outer .flex-3 .item-2 {
+              height: 100%; } }
+          @media (min-width: 481px) and (max-width: 767px) {
+            body section.features main .content .outer .flex-1 .item-1, body section.features main .content .outer .flex-1 .item-3 {
+              height: 0; }
+            body section.features main .content .outer .flex-1 .item-2 {
+              height: 100%; }
+            body section.features main .content .outer .flex-2 .item-1, body section.features main .content .outer .flex-2 .item-3 {
+              height: 0; }
+            body section.features main .content .outer .flex-2 .item-2 {
+              height: 100%; }
+            body section.features main .content .outer .flex-3 .item-1, body section.features main .content .outer .flex-3 .item-3 {
+              height: 0; }
+            body section.features main .content .outer .flex-3 .item-2 {
+              height: 100%; } }
+  body section.bottom {
+    height: 100vh;
+    /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+    /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+    width: 100%;
+    overflow: hidden; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      body section.bottom {
+        height: 50vh; } }
+    @media (min-width: 481px) and (max-width: 767px) {
+      body section.bottom {
+        height: auto; } }
+    body section.bottom main {
+      height: 50vh;
+      /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+      /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */ }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        body section.bottom main {
+          height: 25vh; } }
+      @media (min-width: 481px) and (max-width: 767px) {
+        body section.bottom main {
+          height: 25vh; } }
+      body section.bottom main .register {
+        position: relative;
+        left: 5vw;
+        background-color: #FFB143;
+        height: 19.44444vh;
+        border-radius: 9.72222vh;
+        /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+        /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+        padding: 0 6vw;
+        width: fit-content; }
+        @media (min-width: 768px) and (max-width: 1024px) {
+          body section.bottom main .register {
+            height: 9.72222vh;
+            border-radius: 4.86111vh; } }
+        @media (min-width: 481px) and (max-width: 767px) {
+          body section.bottom main .register {
+            height: 6.48148vh;
+            top: 5vh;
+            border-radius: 4.86111vh; } }
+        body section.bottom main .register p {
+          font-size: 4em;
+          /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+          /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+          position: relative;
+          top: 50%;
+          font-weight: 700;
+          transform: translateY(-50%);
+          text-transform: uppercase; }
+          @media (min-width: 768px) and (max-width: 1024px) {
+            body section.bottom main .register p {
+              font-size: 2em; } }
+          @media (min-width: 481px) and (max-width: 767px) {
+            body section.bottom main .register p {
+              font-size: 1.8em; } }
+      body section.bottom main .community {
+        position: relative;
+        left: 40vw;
+        top: 5vh;
+        /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+        background-color: #FF4C4D;
+        color: white;
+        height: 19.44444vh;
+        width: 34.72222vw;
+        border-radius: 9.72222vh;
+        padding: 0 6vw;
+        font-weight: 700;
+        /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+        /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */ }
+        @media (min-width: 768px) and (max-width: 1024px) {
+          body section.bottom main .community {
+            top: 5vh;
+            left: 40vw; } }
+        body section.bottom main .community .container {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%); }
+        @media (min-width: 768px) and (max-width: 1024px) {
+          body section.bottom main .community {
+            height: 9.72222vh;
+            border-radius: 19.44444vh; } }
+        @media (min-width: 481px) and (max-width: 767px) {
+          body section.bottom main .community {
+            height: 11.11111vh;
+            border-radius: 19.44444vh; } }
+        body section.bottom main .community p {
+          position: relative; }
+        body section.bottom main .community p.head {
+          margin: 0 auto;
+          text-align: center;
+          font-size: 4em;
+          position: relative;
+          width: 17.36111vw;
+          /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+          /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+          text-transform: uppercase; }
+          @media (min-width: 768px) and (max-width: 1024px) {
+            body section.bottom main .community p.head {
+              font-size: 2em; } }
+          @media (min-width: 481px) and (max-width: 767px) {
+            body section.bottom main .community p.head {
+              font-size: 2em; } }
+        body section.bottom main .community p.rig {
+          text-align: right; }
+    body section.bottom header {
+      height: 10vh;
+      margin: 2.88889vh 0 0 0;
+      padding: 0 3.26389vw;
+      height: 5vh;
+      /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+      /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */ }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        body section.bottom header {
+          margin: 1.44444vh 0 0 0; } }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        body section.bottom header {
+          margin: 2.88889vh 0; } }
+      body section.bottom header .heading {
+        position: relative;
+        font-size: 3.5em;
+        font-weight: bold;
+        width: fit-content;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%);
+        /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+        /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */ }
+        @media (min-width: 768px) and (max-width: 1024px) {
+          body section.bottom header .heading {
+            font-size: 1.8em; } }
+        @media (min-width: 481px) and (max-width: 767px) {
+          body section.bottom header .heading {
+            font-size: 2em; } }
+    body section.bottom footer {
+      width: 80%;
+      margin: 2vh auto;
+      height: 40vh;
+      /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+      /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+      display: flex; }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        body section.bottom footer {
+          height: 20vh; } }
+      @media (min-width: 481px) and (max-width: 767px) {
+        body section.bottom footer {
+          height: 15vh; } }
+      body section.bottom footer .flex {
+        width: 25%;
+        display: flex;
+        flex-direction: column; }
+        body section.bottom footer .flex .icon {
+          height: 20vh;
+          /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+          /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+          margin: 0 auto; }
+          @media (min-width: 768px) and (max-width: 1024px) {
+            body section.bottom footer .flex .icon {
+              height: 15vh; } }
+          @media (min-width: 481px) and (max-width: 767px) {
+            body section.bottom footer .flex .icon {
+              height: 10vh; } }
+          body section.bottom footer .flex .icon img {
+            margin: 0 auto;
+            height: 100%; }
+        body section.bottom footer .flex .line {
+          text-align: center;
+          font-size: 1.4em;
+          font-weight: 700;
+          margin: 0 auto;
+          width: 100%;
+          /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+          /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */ }
+          @media (min-width: 768px) and (max-width: 1024px) {
+            body section.bottom footer .flex .line {
+              font-size: 1em; } }
+          @media (min-width: 481px) and (max-width: 767px) {
+            body section.bottom footer .flex .line {
+              font-size: 1em; } }
+  body section.footer {
+    height: 30vh;
+    /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+    /*  ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px */
+    background-color: #330f49; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      body section.footer {
+        height: 15vh; } }
+    @media (min-width: 481px) and (max-width: 767px) {
+      body section.footer {
+        height: 15vh; } }

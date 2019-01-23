@@ -1,0 +1,563 @@
+$colors:( 'primary':#000, 'accent':#fff);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700');
+@function color($val) {
+    @return map-get($map: $colors, $key: $val);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@import 'viewports';
+@import 'slider';
+body {
+    font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    section.top { 
+        height: 100vh;
+        overflow: hidden;
+        background: url('../../assets/back2.svg') no-repeat;
+        background-size: cover;
+        
+        @include query(tablet-potrait){
+            background: none;
+            height:50vh;
+        }
+        @include query(low-res){
+            background: none;
+            // height:50vh;
+        }
+
+        header {
+            @include query(tablet-potrait){height:5vh;}
+            height: 10vh;
+            margin: 26/900*100vh 0;
+            @include query(tablet-potrait){
+                margin: 13/900*100vh 0;
+            }
+            padding: 0 47/1440*100vw;
+            div.logo {
+                float: left;
+                height: 100%;
+                img.logo {
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            .menu {
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                float: right;
+                height: 60px;
+                width: 75vw;
+                @include query(tablet-potrait){
+                    height:30px;
+                }
+                .menu-item {
+                    float: right;
+                    height: 100%;
+                    .menu-btn {
+                        position: relative;
+                        top: 50%;
+                        height: 27/900*100vh;
+                        transform: translateY(-50%);
+                        padding: 1vh 2vw;
+                        @include query(tablet-potrait){padding:0.5vh 2vw;}
+                        @include query(low-res)
+                        {
+                            height: 27/1800*100vh;
+                        }
+                        color: white;
+                        background-color: #FF4C4D;
+                        border: 1px solid transparent;
+                        border-radius: 3vh;
+                        margin: 0px 1vw;
+                        p {
+                            position: relative;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            font-size: 2.5vh;
+                            @include query(tablet-potrait){
+                                font-size:1.5vh;
+                            }
+                            @include query(low-res){
+                                font-size:1.5vh;
+                            }                            
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+        main {
+            padding: 0 47/1440*100vw;
+            height: 80vh;
+            @include query(tablet-potrait){height:45vh;}
+            .content {
+                height: 100%;
+                // transform: translateY();
+                padding: 0 60/1752*100vw 2vh;
+                .heading {
+                    position: absolute;
+                    top: 20%;
+                    @include query(tablet-potrait){
+                        top: 10vh;
+                    }
+                    width: 465/1440*100vw;
+                    @include query(low-res){
+                        // position: relative;
+                        // top:0;
+                        left:50%;
+                        transform: translateX(-50%);
+                        text-align: center;
+                        width: 1000/1440*100vw;
+                    }
+                    p {
+                        font-size: 2em;
+                        font-weight: 300;
+                    }
+                    p.header {
+                        font-size: 4.2em;
+                        font-weight: 400;
+                    }
+                    .joinus {
+                        padding: 10px;
+                        .joinus-btn {
+                            margin:0 auto;
+                            height: 27/900*100vh;
+                            padding: 1vh 3vw;
+                            color: white;
+                            background-color: #FF4C4D;
+                            border: 1px solid transparent;
+                            border-radius: 3vh;
+                            width: fit-content;
+                            @include query(tablet-potrait){
+                                height:27/900/2*100vh;
+                                padding: 0.5vh 3vw;
+                                border-radius: 1.5vh;
+                            }
+                            @include query(low-res){
+                                height:40/900/2*100vh;
+                                padding: 0.5vh 3vw;
+                                border-radius: 1.5vh;
+                            }
+                            p {
+                                position: relative;
+                                top: 50%;
+                                text-align: center;
+                                transform: translateY(-50%);
+                                font-size: 1.5em;
+                                font-weight: 600;
+                                @include query(tablet-potrait){
+                                    font-size: 1.5vh;
+                                }
+                                @include query(low-res){
+                                    font-size: 2vh;
+                                }
+                            }
+                        }
+                    }
+                }
+                .monitor {
+                    position: relative;
+                    top: 150/900*100vh;
+                    left: 420/1440*100vw; 
+                    @include query(low-res){
+                        left:0;
+                        top:400/900*100vh;   
+                    }
+                    img {
+                        height: 452/900*100vh;
+                        @include query(tablet-potrait){
+                            height: 452/1800*100vh;
+                        }
+                        @include query(low-res){
+                            height: 600/1800*100vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section.features {
+        height: 100vh;
+        overflow: hidden;
+        @include query(tablet-potrait){
+            height:auto;
+        }
+        @include query(low-res){
+            height:auto;
+        }
+        header {
+            height: 10vh;
+            margin: 26/900*100vh 0;
+            padding: 0 47/1440*100vw;
+            @include query(tablet-potrait){
+                height: 5vh;
+                margin: 26/1800*100vh 0 0 0;
+            }
+            @include query(low-res){
+                margin: 26/900*100vh 0 0 0;
+            }
+            .heading {
+                position: relative;
+                font-size: 3.5em;
+                font-weight: bold;
+                width: fit-content;
+                margin: 0 auto;
+                top: 50%;
+                transform: translateY(-50%);
+                @include query(tablet-potrait){
+                    font-size: 2em;
+                }
+                @include query(low-res){
+                    font-size: 3em;
+                }
+            }
+        }
+        main {
+            overflow: hidden;
+            height: 80vh;
+            @include query(tablet-potrait){
+                height: auto;
+            }
+            @include query(low-res){
+                height: auto;
+            }            
+            background-color: #fff;
+            color: #000;
+            .content {
+                margin: 0 140/1440*100vh;
+                height: 100%;
+                @include query(tablet-potrait){
+                    margin:0;
+                }
+                @include query(low-res){
+                    margin:0;
+                }
+                .outer {
+                    margin: 0 auto;
+                    height: 100%;
+                    width: 80%;
+                    display: flex;
+                    @include query(tablet-potrait){
+                        display: block;
+                    }
+                    @include query(low-res){
+                        display: block;
+                    }                    
+                    .feature {
+       
+                        height: 100%;
+                        width: 33%;
+                        @include query(tablet-potrait){
+                            min-width: 400px;
+                            margin: 0 auto;
+                            height: 33%;
+                        }
+                        @include query(low-res){
+                            min-width: 400px;
+                            margin: 0 auto;
+                            height: 33%;
+                        }
+                        .span-wrapper{
+                            $pad:2vh;
+                            @include query(tablet-potrait){
+                                $pad:1vh;
+                            }
+                            height: calc(100% - ($pad/2));
+                            width: calc(100% - ($pad/2));
+                            padding: $pad;
+                            .head{
+                                text-transform: uppercase;
+                                font-weight: bold;
+                                font-size: 2vh;
+                                @include query(tablet-potrait){
+                                    font-size: 1vh;
+                                }
+                            }
+                            .pic{
+                                margin: 0 auto;
+                                display: flex;
+                                flex-direction: column;
+                                align-content: center;
+                                img{
+                                    margin: 0 auto;
+                                }
+                                .pricing{
+                                    margin: 0 auto;
+                                }
+                            }
+                            .empty{height: 2vh}
+                            .content{
+                                padding-top: 2vh;
+                                ul{
+                                    padding-left: 2vh;
+                                    font-size: 1.5vh;
+                                    line-height: 1.5;
+                                    list-style-type: none;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                        .item-2{
+                            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
+                        }
+                    }
+                    .flex-1 {
+                        .item-1 {
+                            height: 5%;
+                         }
+                        .item-2 {
+                            background: #330f49;
+                            color: white;                            // color:red;
+                            height: 75%;
+                        }
+                        .item-3 {
+                            height: 20%;
+                        }
+                    }
+                    .flex-2 {
+                        width: 34%;
+                        .item-1 {
+                            height: 12.5%;
+                        }
+                        .item-2 {
+
+                            height: 75%;
+                        }
+                        .item-3 {
+                            height: 12.5%;
+                        }
+                    }
+                    .flex-3 {
+                        .item-1 {
+                            height: 20%;
+                        }
+                        .item-2 {
+                            background: #330f49;
+                            color: white;  
+                            height: 75%;
+                        }
+                        .item-3 {
+                            height: 5%;
+                        }
+                    }
+                    $class-slug:flex !default;
+                    @include query(tablet-potrait){
+                        @for $i from 1 through 3{
+                            .#{$class-slug}-#{$i}{
+                                .item-1,.item-3{
+                                    height:0;
+                                }
+                                .item-2{
+                                    height:100%;
+                                }
+                            }
+                        }
+                    }
+                    @include query(low-res){
+                        @for $i from 1 through 3{
+                            .#{$class-slug}-#{$i}{
+                                .item-1,.item-3{
+                                    height:0;
+                                }
+                                .item-2{
+                                    height:100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section.bottom{
+        height:100vh;
+        @include query(tablet-potrait){
+            height: 50vh;                
+        }
+        @include query(low-res){
+            height:auto;
+            // display: none;         
+        }
+        width:100%;
+        overflow:hidden;
+        main{
+            height:50vh;
+            @include query(tablet-potrait){
+               height: 25vh;                
+            }
+            @include query(low-res){
+               height: 25vh;                
+            }
+            .register{
+                position: relative;
+                left:5vw;
+                background-color: #FFB143;
+                $h:175/900*100vh;
+                height: $h;
+                border-radius:175/1800*100vh;
+                @include query(tablet-potrait){
+                    height: $h/2;
+                    border-radius:175/1800/2*100vh;
+                }
+                @include query(low-res){
+                    height: $h/3;
+                    top:5vh;
+                    border-radius:175/1800/2*100vh;
+                }
+                padding:0 6vw;
+                width: fit-content;
+                p{
+                    font-size: 4em;
+                    @include query(tablet-potrait){
+                        font-size:2em
+                    }
+                    @include query(low-res){
+                        font-size:1.8em
+                    }
+                    position: relative;
+                    top:50%;
+                    font-weight: 700;
+                    transform: translateY(-50%);
+                    text-transform: uppercase;
+                }
+            }
+
+            .community{
+                position: relative;
+                left:40vw;
+                top:5vh;
+                @include query(tablet-potrait){
+                    top:5vh;
+                    left:40vw;
+                }
+                .container{
+                    position: relative;
+                    top:50%;
+                    transform: translateY(-50%);
+                }
+                background-color: #FF4C4D;
+                color:white;
+                $h:175/900*100vh;
+                height: 175/900*100vh;
+                width: 500/1440*100vw;
+                border-radius:175/1800*100vh;
+                padding:0 6vw;
+                font-weight: 700;
+                @include query(tablet-potrait){
+                    $h:175/1800*100vh;
+                    height: 175/1800*100vh;
+                    border-radius:175/900*100vh;
+                }                
+                @include query(low-res){
+                    height: 200/1800*100vh;
+                    border-radius:175/900*100vh;
+                }
+                p{
+                    position:relative;
+                }
+                p.head{
+                    margin: 0 auto;
+                    text-align: center;
+                    font-size: 4em;
+                    position: relative;
+                    width: 250/1440*100vw;
+                    @include query(tablet-potrait){font-size: 2em;}
+                    @include query(low-res){font-size: 2em;}
+                    
+                    text-transform: uppercase;
+                }
+                p.rig{
+                    text-align: right;
+                }
+            }
+        }
+        header {
+                height: 10vh;
+                margin: 26/900*100vh 0 0 0;
+                padding: 0 47/1440*100vw;
+                height: 5vh;
+                @include query(tablet-potrait){
+                    margin: 13/900*100vh 0 0 0;
+                }                
+                @include query(tablet-potrait){
+                    margin: 26/900*100vh 0;
+                }                
+                .heading {
+                    position: relative;
+                    font-size: 3.5em;
+                    font-weight: bold;
+                    width: fit-content;
+                    margin: 0 auto;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    @include query(tablet-potrait){
+                        font-size: 1.8em;
+                    }
+                    @include query(low-res){
+                        font-size: 2em;
+                    }
+                }
+            }
+        footer{
+            width:80%;
+            margin: 2vh auto;
+            height:40vh;
+            @include query(tablet-potrait){
+                height: 20vh;
+            }
+            @include query(low-res){
+                height: 15vh;
+            }
+            display: flex;
+            .flex{
+                width:25%;
+                display: flex;
+                flex-direction: column;
+                .icon{
+                    height:20vh;
+                    @include query(tablet-potrait){
+                        height: 15vh;
+                    }
+                    @include query(low-res){
+                        height: 10vh;
+                    }
+                    margin:0 auto;
+                    img{
+                        margin:0 auto;
+                        height:100%;          
+                    }
+                }
+                .line{
+                    text-align: center;
+                    font-size: 1.4em;
+                    font-weight: 700;
+                    // height:10vh;
+                    margin: 0 auto;
+                    width:100%;
+                    @include query(tablet-potrait){
+                        font-size: 1em;
+                        // height: 5vh;
+                    }
+                    @include query(low-res){
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+    section.footer{
+        height:30vh;
+        @include query(tablet-potrait){
+            height: 15vh;
+        }
+        @include query(low-res){
+            height: 15vh;
+        }
+        background-color: #330f49;
+    }
+}
